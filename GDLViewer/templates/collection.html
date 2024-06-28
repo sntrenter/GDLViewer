@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Collections</title>
+</head>
+<body>
+    <h1>URIs</h1>
+    <ul>
+        {% for uri in root_folders %}
+            <li>{{uri.name}}</li>
+            <img src="{{ uri.random_image }}" 
+            alt="{{ folder.name }}" 
+            style="max-width: 200px; max-height: 200px;">
+        {% endfor %}
+    </ul>
+</body>
+</html>
