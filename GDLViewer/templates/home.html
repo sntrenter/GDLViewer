@@ -18,7 +18,16 @@
         </form>
         <div id="response"></div>
     </div>
+    <div>
+        <h4>URLs subscribed too:</h4>
+        <ul>
+            {% for url in urls %}
+                <li>{{ url}}</li>
+            {% endfor %}
+        </ul>       
+    </div>
     <nav>
+        <h4>Navigation:</h4>
         <ul>
             <li><a href="collection/">Collection</a></li>
         </ul>

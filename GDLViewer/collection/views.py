@@ -22,7 +22,7 @@ def find_root_folders_with_images(path):#garbage code
                 random_image_path = os.path.join(root, random_image).replace('\\', '/')
                 root_folders.append({
                     'name': root,
-                    'random_image': "http://localhost:4444/" +  random_image_path.replace("../gallery-dl/", ""),
+                    'random_image': "http://localhost:4444/" +  random_image_path.replace("gallery-dl/", ""),
                 })
     return root_folders
 
@@ -31,7 +31,8 @@ def find_root_folders_with_images(path):#garbage code
 #need to be running python -m http.server 4444
 # to have this running alongside the django server
 def index(request):
-    path = "../gallery-dl"#project global variable
+    #path = "../gallery-dl"#project global variable
+    path = "gallery-dl"
     root_folders = find_root_folders_with_images(path)
     #print("Root folders in the given path are: ")
     #for folder in root_folders:
