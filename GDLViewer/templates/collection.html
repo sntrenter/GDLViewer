@@ -8,6 +8,8 @@
     <ul>
         {% for uri in root_folders %}
             <li>{{uri.name}}</li>
+            <a href="/dir/{{ uri.name }}">NAV</a>
+            <br>
             <img src="{{ uri.random_image }}" 
             alt="{{ folder.name }}" 
             style="max-width: 200px; max-height: 200px;">
