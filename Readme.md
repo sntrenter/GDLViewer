@@ -8,3 +8,9 @@
 sntre@DESKTOP-BCI8UD6 MINGW64 ~/Documents/wer/gallery-dl (master)
 $ python -m http.server 4444
 ```
+
+
+make dirs navigable, with back button
+
+
+make image gallery thing
