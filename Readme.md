@@ -14,3 +14,7 @@ make dirs navigable, with back button
 
 
 make image gallery thing
+
+had to add ../ to all paths, should probably make a global setting for path
+
+dynamic loading
